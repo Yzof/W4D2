@@ -1,0 +1,20 @@
+<h1> Cat </h1>
+<br>
+<h2><%= @cat.name %></h2>
+
+<table>
+  <tr>
+    <th> Color </th>
+    <th> Sex </th>
+    <th> Birth Date </th>
+  </tr>
+  <tr>
+    <td> <%= @cat.color.capitalize %> </td>
+    <td> <%= @cat.sex %> </td>
+    <td> <%= @cat.birth_date %> </td>
+  </tr>
+</table>
+<br>
+<p> Description: <%= @cat.description %></p>
+<br>
+<%= link_to "All Cats", cats_url %>
